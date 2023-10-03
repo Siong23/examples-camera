@@ -59,7 +59,8 @@ def main():
     inference_size = input_size(interpreter)
 
     #cap = cv2.VideoCapture(args.camera_idx)
-    cap = cv2.VideoCapture('rtsp://192.168.0.122:7447/unicast')
+    #cap = cv2.VideoCapture('rtsp://192.168.0.122:7447/unicast')
+    cap = cv2.VideoCapture('rtsp://admin:mmuzte123@192.168.254.2:554')
 
     while cap.isOpened():
         ret, frame = cap.read()
