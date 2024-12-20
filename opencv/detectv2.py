@@ -1,3 +1,15 @@
+"""A demo that runs object detection on camera frames using OpenCV.
+
+Run with CPU:
+python3 detectv2.py
+
+Run with Coral accelerator:
+python3 detect.py \
+  --edgetpu \
+  --model ../all_models/mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite
+
+"""
+
 import argparse
 import cv2
 import os
