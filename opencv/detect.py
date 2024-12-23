@@ -53,6 +53,8 @@ def main():
     parser.add_argument('--camera_idx', type=int, help='Index of which video source to use. ', default = 0)
     parser.add_argument('--threshold', type=float, default=0.1,
                         help='classifier score threshold')
+    parser.add_argument('--edgetpu', help='Use Coral Edge TPU Accelerator to speed up detection',
+                        action='store_true')
     args = parser.parse_args()
 
     print('Loading {} with {} labels.'.format(args.model, args.labels))
